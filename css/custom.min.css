@@ -1,0 +1,119 @@
+/* Imports */
+/* Icons */
+@import url("https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css");
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--white: #fff;
+	--black: #000;
+	--primary: #ff0000;
+	--secondary: #333333;
+}
+
+::selection {
+	background-color: var(--secondary);
+	color: var(--white);
+}
+
+/* General Styling */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none !important;
+	list-style-type: none;
+	font-family: "Poppins", sans-serif;
+	overflow-wrap: break-word;
+}
+
+html {
+	scroll-behavior: smooth;
+	background: #0d0d0e;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+
+body {
+	overflow-x: clip;
+}
+
+a,
+button {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	display: inline-block;
+}
+
+ul,
+ol,
+dl,
+address,
+label,
+figure {
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.75;
+}
+
+section {
+	position: relative;		
+}
+
+.color-primary {
+	color: var(--primary);
+}
+
+.color-secondary {
+	color: var(--secondary);
+}
+
+
+/* LENIS */
+html.lenis,
+html.lenis body {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+	pointer-events: none;
+}
+
+/* THEMEBTN */
+.themeBtn {
+	width: fit-content;
+	display: block;
+	background-color: var(--primary);
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding: 0.75rem 2.25rem;
+}
+
+.themeBtn:hover {
+	transform: translateY(-10px);
+}
+
+.main-banner {
+	height: 200vh;
+}
